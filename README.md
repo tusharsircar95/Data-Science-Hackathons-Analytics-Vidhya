@@ -39,8 +39,26 @@ We then created a basic logistic regression model based on the open and click pr
 
 We then generated estimates based on Naive Bayes(NB).
 P(Click|Campaign) = P(Campaign|Click) * P(Click) / P(Campaign)
+The above were calculated as follows:
+
 
 Probabilities were calculated and replaced by aggregated proxies when certain values were missing (for example new UserID's in test set).
+
+
+P(Click): Number of clicks / Number of emails sent to a particular UserID. In case of a new UserID, the mean probability for the email's Communication Type was used as a proxy
+
+P(Campaign): Number of emails for given Campaign_ID / Total number of emails sent (calculate over both train and test)
+
+P(Click|Campaign): This is the most interesting part. We represent a campaign by its features (number of links, images, sections, communication_type etc. Numberical features are convereted to categorical using cut. Let's denote these features as k1,k2 etc.
+Therefore, each campaign is [k1, k2, ... kn].
+
+Assuming independence of features,
+
+P([k1, k2, k3 ... kn] | Click) = P([k1] | Click) * P([k2] | Click) ... P([kn] | Click)
+
+P([ki]|Click) is simply the number of times a campaign had feature ki across all campaigns sent to the user. This way we were able to incorporate the features of a campaign into the naive bayes estimate.
+
+
 The Naive Bayes method gave a public leaderboard score of 0.644.
 
 We finally used the Naive Based estimates as another feature fore the Logistic Regression model and created an ensemble out of the following models:
