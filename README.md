@@ -15,6 +15,7 @@ We are supposed to predict the probability of user clicking on a link.
 ### Data Processing & Exploring
 We started by joining the train and test dataset with the campaign data and then engineered the following features:
 (1) Hour when email was sent (send_hour)
+
 (2) Day of the week when email was sent (weekday_type)
 
 This was followed by visualizing the probability of opening/clicking of links based on:
