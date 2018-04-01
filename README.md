@@ -39,7 +39,7 @@ We then created a basic logistic regression model based on the open and click pr
 We then generated estimates based on Naive Bayes(NB).
 P(Click|Campaign) = P(Campaign|Click) * P(Click) / P(Campaign)
 
-Probabilities were calcualted and replaced by aggregated proxies when certain values were missing (for example new UserID's in test set).
+Probabilities were calculated and replaced by aggregated proxies when certain values were missing (for example new UserID's in test set).
 The Naive Bayes method gave a public leaderboard score of 0.644.
 
 We finally used the Naive Based estimates as another feature fore the Logistic Regression model and created an ensemble out of the following models:
