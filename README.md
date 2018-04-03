@@ -22,7 +22,7 @@ We started by joining the train and test dataset with the campaign data and then
 This was followed by visualizing the probability of opening/clicking of links based on:
 (1) Communication Type
 
- ![CType](https://github.com/tusharsircar95/LordOfTheMachines-Analytics_Vidhya-/blob/master/CType_vs_Prob.jpeg)
+ ![CType](https://github.com/tusharsircar95/LordOfTheMachines-Analytics_Vidhya-/blob/master/CType_vs_Prob.png)
 
 (2) Send Hour
 
