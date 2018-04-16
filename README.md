@@ -4,7 +4,9 @@
 (Contest Link: https://datahack.analyticsvidhya.com/contest/lord-of-the-machines/)
 
 Team: alpha1995
-
+Public LB Score: 0.6837
+Private LB Score: 0.6786
+Overall Rank: 19
 Sharing our solution to the Lord Of The Machines data science hackathon conducted by Analytics Vidhya
 The problem involved predicting the click probability of links inside a mailer for email campaigns from January 2018 to March 2018.
 
@@ -71,11 +73,12 @@ We finally used the Naive Based estimates as another feature fore the Logistic R
 
 4) Logistic Regression (CP , NB)
 
-A weighted average of the above produced our final output having a public leaderboard score of 0.6837.
+A weighted average of the above produced our final output having a public leaderboard score of 0.6837 and a private leaderboard score of 0.6786.
 
-We will share more details regarding the aggregate proxy calculation and the calculation of the Naive Bayes soon.
-
-
+### Techniques Not Tried
+- Target encoding of categorical variables
+- Aggregating text features of email to create a user profile feature
+- Features such as time between emails
 
 
 
