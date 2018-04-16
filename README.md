@@ -75,6 +75,8 @@ We finally used the Naive Based estimates as another feature fore the Logistic R
 
 A weighted average of the above produced our final output having a public leaderboard score of 0.6837 and a private leaderboard score of 0.6786.
 
+Adding communication type, number of links, images etc. directly as features did not seem to increase our score hence they were not used as features in the logistic regression model. Instead, the NB estimate calculated using these features were incorporated.
+
 ### Techniques Not Tried
 - Target encoding of categorical variables
 - Aggregating text features of email to create a user profile feature
