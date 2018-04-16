@@ -9,7 +9,7 @@ Public LB Score: 0.6837
 
 Private LB Score: 0.6786
 
-Overall Rank: 19
+Overall Rank: 19/153
 
 Sharing our solution to the Lord Of The Machines data science hackathon conducted by Analytics Vidhya
 The problem involved predicting the click probability of links inside a mailer for email campaigns from January 2018 to March 2018.
