@@ -28,15 +28,15 @@ We started by joining the train and test dataset with the campaign data and then
 This was followed by visualizing the probability of opening/clicking of links based on:
 (1) Communication Type
 
- ![CType](https://github.com/tusharsircar95/LordOfTheMachines-Analytics_Vidhya-/blob/master/CType_vs_Prob.png)
+ ![CType](https://github.com/tusharsircar95/Data-Science-Hackathons-Analytics-Vidhya/blob/master/Lord%20Of%20The%20Machines/CType_vs_Prob.png)
 
 (2) Send Hour
 
-![SendHour](https://github.com/tusharsircar95/LordOfTheMachines-Analytics_Vidhya-/blob/master/SendHour_vs_Prob.png)
+![SendHour](https://github.com/tusharsircar95/Data-Science-Hackathons-Analytics-Vidhya/blob/master/Lord%20Of%20The%20Machines/SendHour_vs_Prob.png)
 
 (3) Day Of The Week
 
-![WeekdayType](https://github.com/tusharsircar95/LordOfTheMachines-Analytics_Vidhya-/blob/master/WeekdayType_vs_Prob.png)
+![WeekdayType](https://github.com/tusharsircar95/Data-Science-Hackathons-Analytics-Vidhya/blob/master/Lord%20Of%20The%20Machines/WeekdayType_vs_Prob.png)
 
 
 Our first attempt was to calculate the probability that a user will open or click a link based on UserID for each user. For UserID's present in test set that are not present in the training set, I used the mean probability of opening/clicking across all campaigns having the same communication_type. This gave a public leaderboard score of 0.5714.
