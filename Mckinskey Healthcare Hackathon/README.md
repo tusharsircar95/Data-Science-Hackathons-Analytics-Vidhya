@@ -18,7 +18,7 @@ Overall Rank: 28/584
 Details regarding the dataset can be found on the contest site. We were given details of a patient such as smoking status, gender, health conditions, lifestyle conditions etc. and were supposed to predict the probability of suffering a strokg for that patient.
 
 ### Pre-processing & EDA
-Exploratory data analysis has been presented in a ipython notebook here https://github.com/tusharsircar95/MckinskeyHealthcareHackathon-Analytics_Vidhya/blob/master/EDA_MckinskeyHealthcareHackathon_AV.ipynb
+Exploratory data analysis has been presented in a ipython notebook here https://github.com/tusharsircar95/Data-Science-Hackathons-Analytics-Vidhya/blob/master/Mckinskey%20Healthcare%20Hackathon/EDA_MckinskeyHealthcareHackathon_AV.ipynb
 I looked at the distribution of all variables, the possible values they can take and how they affect the target variable. Also, went through some studies that indicate which factors are responsible for strokes. Based on that narrowed down a few features that seemed to be important.
 
 Next, I imputed missing values for smoking_status and bmi using a group based mode and median respectively. I created a new feature HTpHD which is the sum of heart_disease and hypertension. The intuition behind this was to create a variable denoting the severeness of a disease affecting the patient.
